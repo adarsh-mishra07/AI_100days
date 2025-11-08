@@ -1,0 +1,46 @@
+LIST -
+
+Ordered
+✔ Changeable (mutable)
+✔ Duplicates allowed
+✔ Index-based access
+
+
+Useful Functions:
+
+1.append()
+2.insert()
+3.remove()
+4.pop()
+5.sort()
+6.reverse()
+
+
+--------------------------------------------------------
+Use tuple when data should not change.
+--------------------------------------------------------
+TUPLE
+
+Ordered
+✔ Not changeable (immutable)
+✔ Very fast → used in ML model configs
+
+--------------------------------------------------------
+
+
+Dictionary 
+
+Unordered
+✔ Mutable
+✔ Key–Value pairs
+✔ Used in JSON, APIs, ML configs, dataset
+
+---------------------------------------------------------
+
+SET
+
+SET (Unique Values Only)
+
+✔ Unordered
+✔ No duplicates
+✔ Fast membership testing
