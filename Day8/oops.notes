@@ -1,0 +1,112 @@
+1--What is OOP?
+
+OOP ka matlab — Object-Oriented Programming, jisme hum data aur functions ko ek unit (class) me combine karte hain.
+
+
+
+
+2-- Class & Object
+
+class Student:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def show(self):
+        print(f"Name: {self.name}, Age: {self.age}")
+
+# create object
+s1 = Student("Adarsh", 21)
+s1.show()
+
+
+
+
+3--Constructor (__init__)
+
+Ye automatically call hota hai jab object banate ho.
+Initialize karta hai attributes.
+
+
+
+
+
+4--4️⃣ Instance vs Class Variables
+
+class Car:
+    wheels = 4   # class variable
+    def __init__(self, name):
+        self.name = name  # instance variable
+
+car1 = Car("BMW")
+print(car1.name, Car.wheels)
+
+
+
+
+5️⃣ Inheritance
+class Animal:
+    def sound(self):
+        print("Some sound")
+
+class Dog(Animal):
+    def sound(self):
+        print("Bark!")
+
+d = Dog()
+d.sound()
+
+
+
+
+6️⃣ Polymorphism
+def add(a, b, c=0):
+    return a + b + c
+
+print(add(2, 3))
+print(add(2, 3, 4))
+
+
+
+
+
+7️⃣ Encapsulation
+
+Hiding details using private variables (__var)
+ Encapsulation kya hota hai?
+Encapsulation ka matlab hai: data ko chhupana aur usko sirf methods ke through access karna.
+- Ye security ke liye hota hai.
+- Kisi bhi variable ko private banane ke liye hum uske naam ke aage __ lagate hain.
+
+
+class Account:
+    def __init__(self, balance):
+        self.__balance = balance
+
+    def show_balance(self):
+        print("Balance:", self.__balance)
+
+
+
+
+
+
+8️⃣ Abstraction (Using Abstract Class)
+from abc import ABC, abstractmethod
+
+class Shape(ABC):
+    @abstractmethod
+    def area(self):
+        pass
+
+class Circle(Shape):
+    def area(self):
+        print("Area of circle")
+
+c = Circle()
+c.area()
+
+- Shape ek abstract class hai — sirf design deti hai.
+- area() ek abstract method hai — subclass me likhna zaroori hai.
+- Circle ne area() method implement kiya.
+- Ab tu Circle ka object bana sakta hai aur area() call kar sakta hai.

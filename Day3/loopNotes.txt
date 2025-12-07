@@ -1,0 +1,12 @@
+The focus of today’s learning was Flow Control using Loops — how to make programs think in cycles and repeat tasks efficiently.
+
+* Key concepts I covered:
+
+->for loop
+->while loop
+->break, continue, and pass statements
+->Loop with ranges (range(start, stop, step))
+->Nested loops
+   Real-world examples: pattern printing, summation, and list traversal
+
+   

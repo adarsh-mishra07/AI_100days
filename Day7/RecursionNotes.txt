@@ -1,0 +1,11 @@
+Recursion - when function call itself.
+
+why recursion required ?
+- to make strong logic
+
+
+* Two important  rules of recursion
+  Rules-1 : Base Case ( When It stop)
+  Rules-2 : Recursive call ( how it repeat )
+
+  
