@@ -1,0 +1,78 @@
+mode to open file
+
+r - read 
+w - write
+a - append - to add old file with new
+x - create - only create new file 
+rd - read binary - to read image/vide 
+wb - to write image/video
+
+
+JSON 
+it is a data format which is always store data in key-value pairs ( like a dictionary)
+like:
+
+{
+  "name": "Virat",
+  "age": 22,
+  "skills": ["Python", "React"]
+}
+
+in python - we use JSON module
+like:
+        import json
+
+-----------------------------
+Ex- 
+ 
+ import json
+
+data = {
+    "name": "Virat",
+    "course": "Python",
+    "day": 8
+}
+
+with open("data.json", "w") as f:
+    json.dump(data, f, indent=4)
+
+----------------------------------
+json.dump()  - to save json file of dictionary
+indent - to show the data in good format
+
+-----------------------------------
+
+to read json file
+like:
+
+import json
+with open("data.json", "r") as f:
+    data = json.load(f)
+
+print(data)
+
+---------------
+json.load() - json file convert into dictionary
+
+----------------------------------------
+
+json string 
+
+like 
+
+json_string = '{"name": "Virat", "age": 22}'
+
+data = json.loads(json_string)
+print(data)
+
+-----------------------------------------
+
+
+Dictionary → JSON String
+
+like:
+
+data = {"name": "Virat", "age": 22}
+
+json_str = json.dumps(data, indent=4)
+print(json_str)
