@@ -1,0 +1,26 @@
+1. Intro to pandas
+
+it is one most popular library for data analysis and manipulation
+it used in statistics , economics , web analytics , advertising and many other fields.
+
+
+
+The following are the features of the Pandas Library:
+
+Analyze Data
+Manipulate Data
+Columns can be inserted and deleted from DataFrame
+Group the rows/ columns of a DataFrame/ Series
+Plotting is possible
+Read CSV/ JSON
+Fix the inaccurate data
+Clean the Data completely
+Easy to handle the missing data in the form: NaN, NA, or NaT
+
+what is pandas data frame :
+The Pandas DataFrame is a Two-dimensional tabular data structure i.e. table with rows and columns. Before moving further, we’ve prepared a video tutorial to learn what is a DataFrame in Pandas and how to create:
+
+
+2.
+
+Dataframe

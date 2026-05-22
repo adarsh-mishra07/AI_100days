@@ -12,7 +12,7 @@ def register():
     data={"username":username,"password":password}   # store in form of json
 
     with open("users.json","w") as f:
-        json.dump(data,f)
+        json.dump(data,f)     #user data ko file me save karta hai
 
     print("Register sucessful !")
 
@@ -20,9 +20,9 @@ def login():
     username=input("Enter username:")
     password=input("Enter the password")
 
-    if os.path.exists("users.json"):
-        with open("users.json","r") as f:
-            data=json.load(f)
+    if os.path.exists("users.json"):    #check file existing or not
+        with open("users.json","r") as f:   #open the file to read
+            data=json.load(f)    #file se data read karta hai
 
         if(data["username"]==username and data["password"]==password):
             print("Login successfull")

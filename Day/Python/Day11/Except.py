@@ -53,6 +53,9 @@ else:
 
 """
 
+
+#File Handling + Exception Handling
+
 try:
     with open("data.txt", "r") as f:
         print(f.read())

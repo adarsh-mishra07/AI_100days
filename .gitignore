@@ -1,0 +1,4 @@
+venv/
+MachineLearning/venv/
+__pycache__/
+*.pyc

@@ -1,0 +1,27 @@
+Python kab exception handle karta hai?
+
+Python sirf tab automatically handle karta hai jab:
+Internal system error ho
+Or program terminate karna ho
+
+
+Programmer handle these kind of errors:
+
+
+| Error Type        | Example                           |
+| ----------------- | --------------------------------- |
+| ValueError        | input me string instead of number |
+| ZeroDivisionError | divide by 0                       |
+| FileNotFoundError | file nahi mili                    |
+| KeyError          | dict key missing                  |
+| IndexError        | list index galat                  |
+
+
+
+Exception kya hota hai?
+Exception = run time error
+
+
+Agar exception handle na karein to kya hota hai?
+Program crash ho jaata hai ❌
+
