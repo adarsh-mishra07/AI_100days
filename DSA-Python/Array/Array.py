@@ -148,7 +148,7 @@ print(ar2)
 # MULTI-DIMENSION
 
 #2-D
-
+'''
 twoD= array([[1,3,4,5],[4,2,5,6]])
 print(twoD)
 
@@ -164,6 +164,8 @@ threeD = array([
 print(threeD)
 print("Shape:", threeD.shape)
 
+
+'''
 
 
 
