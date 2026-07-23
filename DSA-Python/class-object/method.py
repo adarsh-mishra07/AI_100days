@@ -6,7 +6,7 @@
 
 class Test:
     x=5
-    def __init__(self):
+    def __init__(self): #it is instance method and it is used to initialize the instance variables of the class. It is called when the class is instantiated. It takes self as a parameter which is the instance object of the class.
         self.x=10
         self.y=20
     def instance_method(self):
@@ -25,6 +25,9 @@ class Test:
 T1=Test()
 print(T1.x," and ",T1.y)
 T1.instance_method()
+
 Test.static_method()
 T1.static_method()
+    
 Test.class_method()
+T1.class_method()
