@@ -17,14 +17,18 @@ X_train, X_test, y_train, y_test = train_test_split(
 )
 
 # Model
+# Model
 model = LinearRegression()
 
 # Train
 model.fit(X_train, y_train)
+
+# Save trained model
+joblib.dump(model, "model.pkl")
+print("Model saved successfully!")
 
 # Predict
 y_pred = model.predict(X_test)
 
 # Evaluate
 print("MAE:", mean_absolute_error(y_test, y_pred))
-#print("R2 Score:", r2_score(y_test, y_pred))
